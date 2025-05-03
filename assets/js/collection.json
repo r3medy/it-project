@@ -1,0 +1,224 @@
+{
+    "cars": [
+        {
+            "manufacturer": "BMW",
+            "car_model": "M8",
+            "year": 2022,
+            "engine_size": 4.4,
+            "horsepower": 617,
+            "torque": 750,
+            "0_100": 3.1,
+            "price_usd": 130000
+        },
+        {
+            "manufacturer": "BMW",
+            "car_model": "M4",
+            "year": 2022,
+            "engine_size": 3,
+            "horsepower": 503,
+            "torque": 649,
+            "0_100": 3.8,
+            "price_usd": 72800
+        },
+        {
+            "manufacturer": "BMW",
+            "car_model": "M5",
+            "year": 2022,
+            "engine_size": 4.4,
+            "horsepower": 600,
+            "torque": 750,
+            "0_100": 3.2,
+            "price_usd": 103500
+        },
+        {
+            "manufacturer": "BMW",
+            "car_model": "Z4 M40i",
+            "year": 2022,
+            "engine_size": 3,
+            "horsepower": 382,
+            "torque": 500,
+            "0_100": 3.9,
+            "price_usd": 63700
+        },
+        {
+            "manufacturer": "McLaren",
+            "car_model": "570S",
+            "year": 2021,
+            "engine_size": 3.8,
+            "horsepower": 562,
+            "torque": 601,
+            "0_100": 3.1,
+            "price_usd": 191000
+        },
+        {
+            "manufacturer": "McLaren",
+            "car_model": "600LT",
+            "year": 2021,
+            "engine_size": 3.8,
+            "horsepower": 592,
+            "torque": 620,
+            "0_100": 2.8,
+            "price_usd": 242500
+        },
+        {
+            "manufacturer": "Alfa Romeo",
+            "car_model": "Giulia Quadrifoglio",
+            "year": 2022,
+            "engine_size": 2.9,
+            "horsepower": 505,
+            "torque": 601,
+            "0_100": 3.8,
+            "price_usd": 80500
+        },
+        {
+            "manufacturer": "Nissan",
+            "car_model": "370Z Nismo",
+            "year": 2020,
+            "engine_size": 3.7,
+            "horsepower": 350,
+            "torque": 374,
+            "0_100": 5,
+            "price_usd": 46815
+        },
+        {
+            "manufacturer": "Nissan",
+            "car_model": "GT-R Nismo",
+            "year": 2021,
+            "engine_size": 3.8,
+            "horsepower": 600,
+            "torque": 652,
+            "0_100": 2.5,
+            "price_usd": 212000
+        },
+        {
+            "manufacturer": "Nissan",
+            "car_model": "400Z",
+            "year": 2023,
+            "engine_size": 3,
+            "horsepower": 400,
+            "torque": 475,
+            "0_100": 4,
+            "price_usd": 40000
+        },
+        {
+            "manufacturer": "Audi",
+            "car_model": "TT RS",
+            "year": 2021,
+            "engine_size": 2.5,
+            "horsepower": 394,
+            "torque": 480,
+            "0_100": 3.6,
+            "price_usd": 68000
+        },
+        {
+            "manufacturer": "Audi",
+            "car_model": "RS 6 Avant",
+            "year": 2021,
+            "engine_size": 4,
+            "horsepower": 591,
+            "torque": 800,
+            "0_100": 3.5,
+            "price_usd": 110000
+        },
+        {
+            "manufacturer": "Audi",
+            "car_model": "RS 7 Sportback",
+            "year": 2021,
+            "engine_size": 4,
+            "horsepower": 591,
+            "torque": 800,
+            "0_100": 3.5,
+            "price_usd": 114000
+        },
+        {
+            "manufacturer": "Mercedes-Benz",
+            "car_model": "C63 AMG",
+            "year": 2021,
+            "engine_size": 4,
+            "horsepower": 469,
+            "torque": 649,
+            "0_100": 3.9,
+            "price_usd": 77000
+        },
+        {
+            "manufacturer": "Mercedes-Benz",
+            "car_model": "AMG GT 4-Door Coupe",
+            "year": 2021,
+            "engine_size": 4,
+            "horsepower": 630,
+            "torque": 900,
+            "0_100": 3.1,
+            "price_usd": 171200
+        },
+        {
+            "manufacturer": "Mercedes-Benz",
+            "car_model": "CLS63 AMG",
+            "year": 2019,
+            "engine_size": 4,
+            "horsepower": 603,
+            "torque": 850,
+            "0_100": 3.4,
+            "price_usd": 132000
+        },
+        {
+            "manufacturer": "Lexus",
+            "car_model": "LC 500",
+            "year": 2021,
+            "engine_size": 5,
+            "horsepower": 471,
+            "torque": 540,
+            "0_100": 4.4,
+            "price_usd": 92950
+        },
+        {
+            "manufacturer": "Ford",
+            "car_model": "Mustang GT",
+            "year": 2022,
+            "engine_size": 5,
+            "horsepower": 460,
+            "torque": 569,
+            "0_100": 4.3,
+            "price_usd": 36120
+        },
+        {
+            "manufacturer": "Ford",
+            "car_model": "Mustang Shelby GT500",
+            "year": 2022,
+            "engine_size": 5.2,
+            "horsepower": 760,
+            "torque": 847,
+            "0_100": 3.5,
+            "price_usd": 81000
+        },
+        {
+            "manufacturer": "Toyota",
+            "car_model": "GR Supra",
+            "year": 2022,
+            "engine_size": 3,
+            "horsepower": 382,
+            "torque": 499,
+            "0_100": 3.9,
+            "price_usd": 43090
+        },
+        {
+            "manufacturer": "Chevrolet",
+            "car_model": "Camaro ZL1",
+            "year": 2021,
+            "engine_size": 6.2,
+            "horsepower": 650,
+            "torque": 881,
+            "0_100": 3.5,
+            "price_usd": 64000
+        },
+        {
+            "manufacturer": "Chevrolet",
+            "car_model": "Corvette Stingray",
+            "year": 2021,
+            "engine_size": 6.2,
+            "horsepower": 495,
+            "torque": 637,
+            "0_100": 2.9,
+            "price_usd": 58900
+        }
+    ]
+}
