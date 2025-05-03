@@ -13,7 +13,10 @@ const colorPallete = {
 }
 
 // Configurations
-var mode = localStorage.getItem("mode") || localStorage.setItem("mode", "light");
+if(!localStorage.getItem("mode")) {
+    localStorage.setItem("mode", "light");
+}
+var mode = localStorage.getItem("mode");
 
 // Switches between darkmode and lightmode
 async function toggleDarkmode() {
