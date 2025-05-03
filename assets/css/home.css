@@ -1,5 +1,27 @@
 h2 {
     font-weight: regular;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 28px;
+    margin: 12px 0;
+    text-align: justify;
+    text-justify: inter-word;
+    opacity: 0;
+    animation: fadeUp 0.6s ease forwards;
+}
+
+hr {
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, transparent, var(--primary-degraded), transparent);
+    height: 2px;
+    border: none;
 }
 
 .ultimate {
@@ -7,4 +29,100 @@ h2 {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
+}
+
+button {
+    background: transparent;
+    border: none;
+}
+
+.explore {
+    font-size: 16px;
+    font-weight: 500;
+    border: 2px solid #00ADEF;
+    border-radius: 6px;
+    padding: 8px;
+    margin-right: 20px;
+    color: var(--primary);
+    transition: color 0.4s ease;
+}
+
+.explore:hover {
+    color: #00ADEF;
+}
+
+
+.media {
+    position: absolute;
+    width: 670px;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 2px 4px 27px 4px var(--primary-degraded);
+    -webkit-box-shadow: 2px 4px 27px 4px var(--primary-degraded);
+    -moz-box-shadow: 2px 4px 27px 4px var(--primary-degraded);
+    top: 45%;
+    transform: translate(120%, -50%);
+}
+
+.hero-section {
+    position: absolute;
+    top: 45%;
+    transform: translate(15%, -50%);
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.numbers {
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    display: flex;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px var(--primary-degraded);
+    background: var(--background);
+}
+.box {
+    flex: 1;
+    padding: 30px 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.box:hover { 
+    background: rgba(170,170,170,0.07);
+}
+
+.label {
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.value {
+    font-size: 48px;
+    font-weight: 600;
+    background: linear-gradient(to left, #003399, #00ADEF);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
