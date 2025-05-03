@@ -29,15 +29,15 @@ body {
 .navbar a {
     text-decoration: none;
     color: inherit;
+    transition: color 0.2s ease-in-out;
 }
 .navbar a:hover {
     text-decoration: none;
-    color: #36393e;
+    color: var(--primary-degraded);
 }
 
 .active-page {
     border-bottom: 2px solid var(--primary-degraded);
-    padding-bottom: 1px;
     font-size: 1.075em;
 }
 
@@ -59,10 +59,12 @@ body {
     color: var(--primary);
 }
 
-path {
+path, svg {
     fill: currentColor;
 }
 
 .status:hover {
     cursor: grab;
+    color: var(--primary-degraded);
+    transition: color 0.1s ease-in-out;
 }
