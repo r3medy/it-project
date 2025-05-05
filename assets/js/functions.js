@@ -1,3 +1,64 @@
+// Regular Expression patterns for email and visa validation
+const RegExpressions = {
+    "email" : new RegExp("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"),
+    "card-number": new RegExp("^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$")
+};
+
+// TEMPORARY UNTIL CUSTOMIZATION PAGE IS DONE
+localStorage.setItem("carDetails", JSON.stringify({ manufacturer: "BMW", model: "M5", color: "White", price: 45999 }));
+
+// When site loads
+document.addEventListener("DOMContentLoaded", async () => {
+    let currentPage = (window.location.pathname.includes("pages/") ? window.location.pathname.split("/pages/")[1] : window.location.pathname.split("/")[1]).replace(".html", ""),
+        { cars } = await fetchCars();
+
+    console.log("Loaded page: " + currentPage);
+    switch(currentPage) {
+        // case "suv":
+        // case "sedan":
+        case "coupe":
+            let filteredCars     = cars.filter(item => item.type == currentPage),
+                carManufacturers = ['Alfa Romeo', 'Audi', 'BMW', 'Chevrolet', 'Ford', 'Lexus', 'McLaren', 'Mercedes-Benz', 'Nissan', 'Porsche', 'Toyota'];
+            // Make cards
+            for(let car of filteredCars) {
+                let card = await createCard(car);
+                document.getElementById("car-container").append(card);
+            }
+            // Append options
+            for(let manufacturer of carManufacturers) {
+                let option = document.createElement("option");
+                option.value = manufacturer;
+                option.textContent = manufacturer;
+                document.getElementById("manufacturerFilter").appendChild(option);
+            }
+            // Event listeners to check for search input and manufacturer selection
+            let search = document.getElementById("search");
+            let manufacturerFilter = document.getElementById("manufacturerFilter");
+            search.addEventListener("input", () => displayFilteredCars(cars, search.value.trim(), manufacturerFilter.value));
+            manufacturerFilter.addEventListener("change", () => displayFilteredCars(cars, search.value.trim(), manufacturerFilter.value));
+            break;
+        case "reservation":
+            document.getElementById("submit-btn").addEventListener("click", reservationSubmit);
+            let carModel = document.getElementById("carModel");
+            let carColor = document.getElementById("carColor");
+            let carPrice = document.getElementById("car-price");
+            let { manufacturer, model, color, price } = JSON.parse(localStorage.getItem("carDetails"));
+            carModel.innerText = `${manufacturer} ${model}`;
+            carColor.innerText = color;
+            carPrice.value = "$" + price.toLocaleString();
+            break;
+        case "invoice":
+            if(!localStorage.getItem("reservationData")) return window.location.href = 'invoice.html';;
+            var { date, name, phone, email, address} = JSON.parse(localStorage.getItem("reservationData")),
+            carDetails = JSON.parse(localStorage.getItem("carDetails"));
+            var dataArr = [name, address, phone, email, carDetails.model, carDetails.color, `$${carDetails.price.toLocaleString()}`],
+            IDsArr  = ["customer-name", "customer-address", "customer-phone", "customer-email", "car-model", "car-color", "total-payment"];
+            document.getElementById('invoice-date').textContent = `${new Date(date).toLocaleDateString("en-GB")}`;
+            document.querySelector(".print-btn").addEventListener("click", () => window.print());
+            for(let i in IDsArr) document.getElementById(IDsArr[i]).textContent = dataArr[i];
+    }
+});
+
 // Colors we use
 const colorPallete = {
     "dark": {
@@ -30,6 +91,72 @@ async function toggleDarkmode() {
 
 // Gets the cars array from the collection.json file
 async function fetchCars() {
-    const res = await fetch("./assets/js/collection.json");
+    const res = await fetch(`${window.location.pathname.includes("pages/") ? ".." : "."}/assets/js/collection.json`);
     return await res.json();
 };
+
+// Makes a card ( div ) for a car
+async function createCard(car) {
+    let card = document.createElement("div");
+    card.className = "car-card";
+
+    let img = document.createElement("img");
+    img.className = "car-image";
+    img.alt = car.carmodel;
+    img.src = car.image_url || "placeholder.jpg"; // Add image source!
+
+    let details = document.createElement("div");
+    details.className = "car-details";
+
+    details.innerHTML = `
+      <h3>${car.manufacturer} ${car.car_model}</h3>
+      <p><strong>Year:</strong> ${car.year}</p>
+      <p><strong>Engine:</strong> ${car.engine_size}L</p>
+      <p><strong>HP:</strong> ${car.horsepower} | <strong>Torque:</strong> ${car.torque} Nm</p>
+      <p><strong>0-100 km/h:</strong> ${car["0_100"]}s</p>
+      <p><strong>Price:</strong> $${car.price_usd.toLocaleString()}</p>
+      <div class="card-buttons">
+        <button class="book-btn">Book Now</button>
+        <button class="testdrive-btn">Test Drive</button>
+      </div>
+    `;
+
+    card.appendChild(img);
+    card.appendChild(details);
+    return card;
+}
+
+// Filters cars according to search term and manufacturer
+async function displayFilteredCars(cars, searchTerm = "", manufacturer = "all") {
+    let container = document.getElementById("car-container")
+    container.innerHTML = "";
+    let filteredbySearch = cars.filter(car => car.car_model.toLowerCase().includes(searchTerm.toLowerCase()) && (manufacturer === "all" || car.manufacturer === manufacturer));
+    for(car of filteredbySearch) container.appendChild(await createCard(car));
+}
+
+async function reservationSubmit(e) {
+    e.preventDefault();
+    let requiredFields = ['name', 'phone', 'email', 'address', 'card-number', 'card-name', 'CVC'],
+        continueSubmition = true,
+        reservationData = { date: new Date() };
+    for(let fieldId of requiredFields) {
+        let field = document.getElementById(fieldId),
+            isError = false;
+        if(fieldId == "email" || fieldId == "card-number") {
+            isError = !RegExpressions[fieldId].test(field.value.trim());
+        }
+        else if(!field.value.trim()) isError = true;
+
+        if(isError) { field.style.border = '1px solid red'; continueSubmition = false; }
+        else field.style.borderColor = '';
+    }
+    if(continueSubmition) {
+        for(let fieldId of requiredFields) {
+            let field = document.getElementById(fieldId).value.trim();
+            reservationData[fieldId] = field;
+        }
+
+        localStorage.setItem("reservationData", JSON.stringify(reservationData));
+        window.location.href = 'invoice.html';
+    }
+}
