@@ -4,8 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Invoice</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../assets/css/invoice.css">
+    <link rel="stylesheet" href="../universal.css">
+    <!-- Javascript -->
+    <script src="../assets/js/functions.js"></script>
 </head>
 <body>
-    
+    <div class="invoice-container">
+        <h1>Invoice</h1>
+        
+        <div class="invoice-header">
+            <div class="invoice-date">
+                <span>Date: </span>
+                <span id="invoice-date">DD/MM/YYYY</span>
+            </div>
+        </div>
+        
+        <div class="invoice-section">
+            <h2>Customer Information</h2>
+            <div class="invoice-row">
+                <span class="invoice-label">Customer Name:</span>
+                <span id="customer-name" class="invoice-value">Value</span>
+            </div>
+            <div class="invoice-row">
+                <span class="invoice-label">Address:</span>
+                <span id="customer-address" class="invoice-value">Value</span>
+            </div>
+            <div class="invoice-row">
+                <span class="invoice-label">Phone:</span>
+                <span id="customer-phone" class="invoice-value">Value</span>
+            </div>
+            <div class="invoice-row">
+                <span class="invoice-label">Email:</span>
+                <span id="customer-email" class="invoice-value">Value</span>
+            </div>
+        </div>
+        
+        <div class="invoice-section">
+            <h2>Car Details</h2>
+            <div class="invoice-row">
+                <span class="invoice-label">Car Model:</span>
+                <span id="car-model" class="invoice-value">Value</span>
+            </div>
+            <div class="invoice-row">
+                <span class="invoice-label">Color:</span>
+                <span id="car-color" class="invoice-value">Value</span>
+            </div>
+            <div class="invoice-row">
+                <span class="invoice-label">Rims & Tires:</span>
+                <span id="rims-tires" class="invoice-value">Value</span>
+            </div>
+        </div>
+        
+        <div class="invoice-section">
+            <h2>Payment Details</h2>
+            <div class="invoice-row">
+                <span class="invoice-label">Payment Method:</span>
+                <span id="payment-method" class="invoice-value">Credit Card</span>
+            </div>
+            <div class="invoice-row total">
+                <span class="invoice-label">Total Payment:</span>
+                <span id="total-payment" class="invoice-value">$0.00</span>
+            </div>
+        </div>
+        
+        <div class="payment-status success">
+            Payment Success
+        </div>
+        
+        <button class="btn print-btn">Print Invoice</button>
+    </div>
 </body>
 </html>
