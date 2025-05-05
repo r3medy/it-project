@@ -3,6 +3,7 @@
         {
             "manufacturer": "BMW",
             "car_model": "M8",
+            "type": "coupe",
             "year": 2022,
             "engine_size": 4.4,
             "horsepower": 617,
@@ -13,6 +14,7 @@
         {
             "manufacturer": "BMW",
             "car_model": "M4",
+            "type": "coupe",
             "year": 2022,
             "engine_size": 3,
             "horsepower": 503,
@@ -23,6 +25,7 @@
         {
             "manufacturer": "BMW",
             "car_model": "M5",
+            "type": "sedan",
             "year": 2022,
             "engine_size": 4.4,
             "horsepower": 600,
@@ -33,6 +36,7 @@
         {
             "manufacturer": "BMW",
             "car_model": "Z4 M40i",
+            "type": "coupe",
             "year": 2022,
             "engine_size": 3,
             "horsepower": 382,
@@ -43,6 +47,7 @@
         {
             "manufacturer": "McLaren",
             "car_model": "570S",
+            "type": "coupe",
             "year": 2021,
             "engine_size": 3.8,
             "horsepower": 562,
@@ -53,6 +58,7 @@
         {
             "manufacturer": "McLaren",
             "car_model": "600LT",
+            "type": "coupe",
             "year": 2021,
             "engine_size": 3.8,
             "horsepower": 592,
@@ -63,6 +69,7 @@
         {
             "manufacturer": "Alfa Romeo",
             "car_model": "Giulia Quadrifoglio",
+            "type": "sedan",
             "year": 2022,
             "engine_size": 2.9,
             "horsepower": 505,
@@ -73,6 +80,7 @@
         {
             "manufacturer": "Nissan",
             "car_model": "370Z Nismo",
+            "type": "coupe",
             "year": 2020,
             "engine_size": 3.7,
             "horsepower": 350,
@@ -83,6 +91,7 @@
         {
             "manufacturer": "Nissan",
             "car_model": "GT-R Nismo",
+            "type": "coupe",
             "year": 2021,
             "engine_size": 3.8,
             "horsepower": 600,
@@ -93,6 +102,7 @@
         {
             "manufacturer": "Nissan",
             "car_model": "400Z",
+            "type": "coupe",
             "year": 2023,
             "engine_size": 3,
             "horsepower": 400,
@@ -103,6 +113,7 @@
         {
             "manufacturer": "Audi",
             "car_model": "TT RS",
+            "type": "coupe",
             "year": 2021,
             "engine_size": 2.5,
             "horsepower": 394,
@@ -113,6 +124,7 @@
         {
             "manufacturer": "Audi",
             "car_model": "RS 6 Avant",
+            "type": "sedan",
             "year": 2021,
             "engine_size": 4,
             "horsepower": 591,
@@ -123,6 +135,7 @@
         {
             "manufacturer": "Audi",
             "car_model": "RS 7 Sportback",
+            "type": "sedan",
             "year": 2021,
             "engine_size": 4,
             "horsepower": 591,
@@ -133,6 +146,7 @@
         {
             "manufacturer": "Mercedes-Benz",
             "car_model": "C63 AMG",
+            "type": "coupe",
             "year": 2021,
             "engine_size": 4,
             "horsepower": 469,
@@ -143,6 +157,7 @@
         {
             "manufacturer": "Mercedes-Benz",
             "car_model": "AMG GT 4-Door Coupe",
+            "type": "sedan",
             "year": 2021,
             "engine_size": 4,
             "horsepower": 630,
@@ -163,6 +178,7 @@
         {
             "manufacturer": "Lexus",
             "car_model": "LC 500",
+            "type": "coupe",
             "year": 2021,
             "engine_size": 5,
             "horsepower": 471,
@@ -173,6 +189,7 @@
         {
             "manufacturer": "Ford",
             "car_model": "Mustang GT",
+            "type": "coupe",
             "year": 2022,
             "engine_size": 5,
             "horsepower": 460,
@@ -183,6 +200,7 @@
         {
             "manufacturer": "Ford",
             "car_model": "Mustang Shelby GT500",
+            "type": "coupe",
             "year": 2022,
             "engine_size": 5.2,
             "horsepower": 760,
@@ -193,6 +211,7 @@
         {
             "manufacturer": "Toyota",
             "car_model": "GR Supra",
+            "type": "coupe",
             "year": 2022,
             "engine_size": 3,
             "horsepower": 382,
@@ -203,6 +222,7 @@
         {
             "manufacturer": "Chevrolet",
             "car_model": "Camaro ZL1",
+            "type": "coupe",
             "year": 2021,
             "engine_size": 6.2,
             "horsepower": 650,
@@ -213,12 +233,35 @@
         {
             "manufacturer": "Chevrolet",
             "car_model": "Corvette Stingray",
+            "type": "coupe",
             "year": 2021,
             "engine_size": 6.2,
             "horsepower": 495,
             "torque": 637,
             "0_100": 2.9,
             "price_usd": 58900
+        },
+        {
+            "manufacturer": "Porsche",
+            "car_model": "Cayenne GTS",
+            "type": "suv",
+            "year": 2025,
+            "engine_size": 4.0,
+            "horsepower": 493,
+            "torque": 660,
+            "0_100": 4.4,
+            "price_usd": 127000
+        },
+        {
+            "manufacturer": "BMW",
+            "car_model": "X5M Competition",
+            "type": "suv",
+            "year": 2025,
+            "engine_size": 4.4,
+            "horsepower": 617,
+            "torque": 750,
+            "0_100": 3.7,
+            "price_usd": 127200
         }
     ]
 }
