@@ -19,7 +19,7 @@
 
 ## Authors
 
-- [Yousef Adel's Github](https://www.github.com/r3medy)
+- [Yousef Adel Abbas](https://www.github.com/r3medy)
 - Mohamed Shaaban Hosny
 - Mohannad Tamer Abd-Elhameed
 - Mazen Hesham Farouk
