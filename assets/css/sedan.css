@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-color: var(--background);   
+    
+}
+  .category {
+    text-align: center;
+    margin: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 120px;
+    color: var(--primary);
+  }
+  .car-card {
+    background-color: white;
+    width: 500px;
+    margin: 20px auto;
+    border-radius: 10px;
+    text-align: center;
+  
+    
+  }
+  .car-card img {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: var(--primary);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .buttons button:hover {
+    background-color: #555;
+  }
+
+  .buttons button:active{
+
+background-color: black;
+
+  }
+.Cars{
+
+  display: flex;
+  justify-content: center;
+  margin-left: 40%;
+
+}
+.first-cars{
+
+margin-right: 25px;
+margin-top: 25px;
+
+
+}
+.second-cars{
+
+ margin-right: 60px; 
+ margin-top: 25px;
+
+}
+.search{
+  width: 300px;
+  height: 45px;
+  margin-left: 20px;
+  font-size: 20px;
+  background-color: var(--primary-degraded);
+  color: white;
+  padding: 10px;
+  border-style: solid;
+  border-color: gray;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.filter{
+  width: 275px;
+  height: 25px;
+  margin-left: 20px;
+  font-size: 20px;
+  background-color: var(--primary-degraded);
+  color: white;
+  padding: 10px;
+  border-style: solid;
+  border-color: gray;
+  margin-top: 50px;
+  border-radius: 5px;
+
+}
