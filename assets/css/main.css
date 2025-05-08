@@ -1,128 +1,288 @@
 h2 {
-    font-weight: regular;
-    font-size: 32px;
-    margin-bottom: 20px;
+  font-weight: normal;
+  font-size: 32px;
+  margin-bottom: 20px;
 }
 
 section p {
-    font-size: 17px;
-    line-height: 28px;
-    margin: 12px 0;
-    text-align: justify;
-    text-justify: inter-word;
-    opacity: 0;
-    animation: fadeUp 0.6s ease forwards;
+  font-size: 17px;
+  line-height: 28px;
+  margin: 12px 0;
+  text-align: justify;
+  text-justify: inter-word;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
 }
 
 hr {
-    position: absolute;
-    width: 80%;
-    left: 50%;
-    transform: translateX(-50%);
-    background: linear-gradient(to right, transparent, var(--primary-degraded), transparent);
-    height: 2px;
-    border: none;
+  position: absolute;
+  width: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--primary-degraded),
+    transparent
+  );
+  height: 2px;
+  border: none;
 }
 
 .ultimate {
-    background: linear-gradient(to left, #003399, #00ADEF);
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
+  background: linear-gradient(to left, #003399, #00adef);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
 }
 
 button {
-    background: transparent;
-    border: none;
+  background: transparent;
+  border: none;
 }
 
 .explore {
-    font-size: 16px;
-    font-weight: 500;
-    border: 2px solid #00ADEF;
-    border-radius: 6px;
-    padding: 8px;
-    margin-right: 20px;
-    color: var(--primary);
-    transition: color 0.4s ease;
+  font-size: 16px;
+  font-weight: 500;
+  border: 2px solid #00adef;
+  border-radius: 6px;
+  padding: 8px;
+  margin-right: 20px;
+  color: var(--primary);
+  transition: color 0.4s ease;
 }
 
 .explore:hover {
-    color: #00ADEF;
+  color: #00adef;
 }
 
-
 .media {
-    position: absolute;
-    width: 670px;
-    height: 350px;
-    border-radius: 8px;
-    box-shadow: 2px 4px 27px 4px var(--primary-degraded);
-    -webkit-box-shadow: 2px 4px 27px 4px var(--primary-degraded);
-    -moz-box-shadow: 2px 4px 27px 4px var(--primary-degraded);
-    top: 45%;
-    transform: translate(120%, -50%);
+  position: absolute;
+  width: 670px;
+  height: 350px;
+  border-radius: 8px;
+  box-shadow: 2px 4px 27px 4px var(--primary-degraded);
+  -webkit-box-shadow: 2px 4px 27px 4px var(--primary-degraded);
+  -moz-box-shadow: 2px 4px 27px 4px var(--primary-degraded);
+  top: 45%;
+  transform: translate(120%, -50%);
 }
 
 .hero-section {
-    position: absolute;
-    top: 45%;
-    transform: translate(15%, -50%);
+  position: absolute;
+  top: 45%;
+  transform: translate(15%, -50%);
 }
 
 video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 8px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .numbers {
-    position: absolute;
-    top: 85%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 600px;
-    display: flex;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px var(--primary-degraded);
-    background: var(--background);
-}
-.box {
-    flex: 1;
-    padding: 30px 20px;
-    text-align: center;
-    transition: all 0.3s ease;
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  display: flex;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px var(--primary-degraded);
+  background: var(--background);
 }
 
-.box:hover { 
-    background: rgba(170,170,170,0.07);
+.box {
+  flex: 1;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.box:hover {
+  background: rgba(170, 170, 170, 0.07);
 }
 
 .label {
-    font-size: 16px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--primary);
-    margin-bottom: 10px;
-    font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .value {
-    font-size: 48px;
-    font-weight: 600;
-    background: linear-gradient(to left, #003399, #00ADEF);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 600;
+  background: linear-gradient(to left, #003399, #00adef);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @keyframes fadeUp {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1200px) {
+  .media {
+    width: 500px;
+    height: 260px;
+    transform: translate(100%, -50%);
+  }
+
+  .hero-section {
+    transform: translate(10%, -50%);
+  }
+
+  .numbers {
+    width: 500px;
+  }
+
+  .value {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  h2 {
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+
+  section p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .media {
+    width: 400px;
+    height: 200px;
+    transform: translate(80%, -50%);
+  }
+
+  .numbers {
+    width: 400px;
+    flex-direction: column;
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  .value {
+    font-size: 32px;
+  }
+
+  .explore {
+    margin-right: 10px;
+    padding: 6px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+  }
+
+  section p {
+    font-size: 15px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .media {
+    position: static;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 20px auto;
+    transform: none;
+  }
+
+  .hero-section {
+    position: static;
+    width: 100%;
+    padding: 20px;
+    transform: none;
+    text-align: center;
+  }
+
+  .numbers {
+    position: static;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    transform: none;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .explore {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .value {
+    font-size: 28px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+
+  section p {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 8px 0;
+  }
+
+  .media {
+    max-width: 100%;
+  }
+
+  .numbers {
+    max-width: 100%;
+  }
+
+  .box {
+    padding: 15px;
+  }
+
+  .value {
+    font-size: 24px;
+  }
+
+  .label {
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+
+  .explore {
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-right: 8px;
+  }
+
+  hr {
+    width: 100%;
+  }
 }
