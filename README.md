@@ -8,11 +8,10 @@
 - Register
 - Login
 #### Pages Left:
-- Coupe Cars ( Mostly Done )
-- Sedan Cars
-- SUV Cars
+- Cars
 - About US ( Missing Images )
 - Contact US ( Missing Images & CSS )
+- Car Preview ( Missing HTML - CSS - Javascript )
 - Customization ( Missing HTML - CSS - Javascript )
 - Feedback ( Missing HTML - CSS - Javascript )
 
