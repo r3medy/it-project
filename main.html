@@ -15,11 +15,11 @@
     <nav class="navbar">
       <ul class="nav-references">
         <li><img src="./assets/images/icon.png" class="logo" /></li>
-        <li><a class="active-page" href="./main.html">Home</a></li>
-        <li><a href="./pages/cars.html">Cars</a></li>
-        <li><a href="./pages/feedback.html">Feedback</a></li>
-        <li><a href="./pages/aboutus.html">About US</a></li>
-        <li><a href="./pages/contactus.html">Contact US</a></li>
+        <li><a class="active-page" href="./main.html" data-lang="home">Home</a></li>
+        <li><a href="./pages/cars.html" data-lang="cars">Cars</a></li>
+        <li><a href="./pages/feedback.html" data-lang="feedback">Feedback</a></li>
+        <li><a href="./pages/aboutus.html" data-lang="aboutus">About US</a></li>
+        <li><a href="./pages/contactus.html" data-lang="contactus">Contact US</a></li>
       </ul>
       <ul class="nav-auth">
         <li onclick="toggleDarkmode()">
@@ -29,9 +29,10 @@
             />
           </svg>
         </li>
-        <li><a class="login-btn" href="./pages/login.html">Login</a></li>
+        <li><a class="lang-switch" href="#" onclick="swapLanguage()">EN</a></li>
+        <li><a class="login-btn" href="./pages/login.html" data-lang="login">Login</a></li>
         <li>
-          <a class="register-btn" href="./pages/register.html">Register</a>
+          <a class="register-btn" href="./pages/register.html" data-lang="register">Register</a>
         </li>
       </ul>
     </nav>
@@ -39,13 +40,13 @@
     <hr />
     <!-- Hero Section - الكتابة -->
     <section class="hero-section">
-      <h2>The <span class="ultimate">ULTIMATE</span> driving experience</h2>
-      <p>
+      <h2 data-lang="hero-header">The <span class="ultimate">ULTIMATE</span> driving experience</h2>
+      <p data-lang="hero-text">
         Discover the pinnacle of automotive engineering and luxury.<br />Our
         exclusive collection of performance vehicles awaits<br />your command on
         the open road.
       </p>
-      <button class="explore" onclick="window.location.href = '/pages/cars.html'">View Cars</button>
+      <button class="explore" onclick="window.location.href = '/pages/cars.html'" data-lang="explore-btn">Explore</button>
     </section>
     <!-- Preview Video - الفيديو -->
     <video
@@ -59,15 +60,15 @@
     <!-- Numbers/Testimonials -->
     <div class="numbers">
       <div class="box">
-        <div class="label">Customers</div>
+        <div class="label" data-lang="customers">Customers</div>
         <div class="value">100+</div>
       </div>
       <div class="box">
-        <div class="label">Cars Sold</div>
+        <div class="label" data-lang="carssold">Cars Sold</div>
         <div class="value">45+</div>
       </div>
       <div class="box">
-        <div class="label">Dealerships</div>
+        <div class="label" data-lang="dealerships">Dealerships</div>
         <div class="value">5+</div>
       </div>
     </div>
