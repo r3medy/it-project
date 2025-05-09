@@ -89,7 +89,7 @@ async function toggleDarkmode() {
 
 // Gets the cars array from the collection.json file
 async function fetchCars() {
-    const res = await fetch(`${window.location.pathname.includes("pages/") ? ".." : "."}/assets/js/collection_v2.json`);
+    const res = await fetch(`${window.location.pathname.includes("pages/") ? ".." : "."}/assets/js/collection.json`);
     return await res.json();
 };
 
