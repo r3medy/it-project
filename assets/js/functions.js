@@ -15,13 +15,10 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     console.log("Loaded page: " + currentPage);
     switch(currentPage) {
-        // case "suv":
-        // case "sedan":
-        case "coupe":
-            let filteredCars     = cars.filter(item => item.type == currentPage),
-                carManufacturers = ['Alfa Romeo', 'Audi', 'BMW', 'Chevrolet', 'Ford', 'Lexus', 'McLaren', 'Mercedes-Benz', 'Nissan', 'Porsche', 'Toyota'];
+        case "cars":
+            let carManufacturers = ['Aston Martin', 'Acura', 'Alfa Romeo', 'Audi','BMW', 'Chevrolet', 'Dodge', 'Ford', 'Jaguar', 'Lexus', 'Lotus', 'Maserati', 'Mercedes-Benz', 'Nissan', 'Porsche', 'Toyota'];
             // Make cards
-            for(let car of filteredCars) {
+            for(let car of cars) {
                 let card = await createCard(car);
                 document.getElementById("car-container").append(card);
             }
@@ -92,7 +89,7 @@ async function toggleDarkmode() {
 
 // Gets the cars array from the collection.json file
 async function fetchCars() {
-    const res = await fetch(`${window.location.pathname.includes("pages/") ? ".." : "."}/assets/js/collection.json`);
+    const res = await fetch(`${window.location.pathname.includes("pages/") ? ".." : "."}/assets/js/collection_v2.json`);
     return await res.json();
 };
 
@@ -104,21 +101,18 @@ async function createCard(car) {
     let img = document.createElement("img");
     img.className = "car-image";
     img.alt = car.carmodel;
-    img.src = car.image_url || "placeholder.jpg"; // Add image source!
+    img.src = car.image_url || "../assets/images/placeholder.jpg"; // Add image source!
 
     let details = document.createElement("div");
     details.className = "car-details";
 
     details.innerHTML = `
-      <h3>${car.manufacturer} ${car.car_model}</h3>
+      <h3>${car.manufacturer} ${car.model}</h3>
       <p><strong>Year:</strong> ${car.year}</p>
-      <p><strong>Engine:</strong> ${car.engine_size}L</p>
-      <p><strong>HP:</strong> ${car.horsepower} | <strong>Torque:</strong> ${car.torque} Nm</p>
-      <p><strong>0-100 km/h:</strong> ${car["0_100"]}s</p>
-      <p><strong>Price:</strong> $${car.price_usd.toLocaleString()}</p>
+      <p><strong>Price:</strong> $${car.MSRP.toLocaleString()}</p>
       <div class="card-buttons">
         <button class="book-btn">Book Now</button>
-        <button class="testdrive-btn">Test Drive</button>
+        <button class="testdrive-btn">Preview</button>
       </div>
     `;
 
@@ -131,7 +125,7 @@ async function createCard(car) {
 async function displayFilteredCars(cars, searchTerm = "", manufacturer = "all") {
     let container = document.getElementById("car-container")
     container.innerHTML = "";
-    let filteredbySearch = cars.filter(car => car.car_model.toLowerCase().includes(searchTerm.toLowerCase()) && (manufacturer === "all" || car.manufacturer === manufacturer));
+    let filteredbySearch = cars.filter(car => car.model.toLowerCase().includes(searchTerm.toLowerCase()) && (manufacturer === "all" || car.manufacturer === manufacturer));
     for(car of filteredbySearch) container.appendChild(await createCard(car));
 }
 
@@ -145,9 +139,7 @@ async function reservationSubmit(e) {
             isError = false;
         if(fieldId == "email" || fieldId == "card-number") {
             isError = !RegExpressions[fieldId].test(field.value.trim());
-        }
-        else if(!field.value.trim()) isError = true;
-
+        } else if(!field.value.trim()) isError = true;
         if(isError) { field.style.border = '1px solid red'; continueSubmition = false; }
         else field.style.borderColor = '';
     }
