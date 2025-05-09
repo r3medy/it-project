@@ -8,20 +8,45 @@ const RegExpressions = {
 // TEMPORARY UNTIL CUSTOMIZATION PAGE IS DONE
 localStorage.setItem("carDetails", JSON.stringify({ manufacturer: "BMW", model: "M5", color: "White", price: 45999 }));
 
+// Colors we use
+const colorPallete = {
+    "light": {
+        "--primary": "rgb(20,18,24)",
+        "--primary-degraded": "rgba(20,18,24,0.15)",
+        "--background": "#fff"
+    },
+    "dark": {
+        "--primary": "rgb(240,240,240)",
+        "--primary-degraded": "rgba(240,240,240,0.15)",
+        "--background": "#121212"
+    }
+}
+
+// Configurations
+if(!localStorage.getItem("mode")) localStorage.setItem("mode", "light");
+if(!localStorage.getItem("lang")) localStorage.setItem("lang", "ar");
+
+var mode = localStorage.getItem("mode"),
+    lang = localStorage.getItem("lang");
+
 // When site loads
 document.addEventListener("DOMContentLoaded", async () => {
     let currentPage = (window.location.pathname.includes("pages/") ? window.location.pathname.split("/pages/")[1] : window.location.pathname.split("/")[1]).replace(".html", ""),
         { cars } = await fetchCars();
 
+    // Logs the current loaded page and theme
     console.log("Loaded page: " + currentPage);
+    console.log("Current theme: " + mode);
+    
+    // Set current theme and language
+    switchTheme(mode);
+    switchLanguage(lang);
+
     switch(currentPage) {
         case "cars":
             let carManufacturers = ['Aston Martin', 'Acura', 'Alfa Romeo', 'Audi','BMW', 'Chevrolet', 'Dodge', 'Ford', 'Jaguar', 'Lexus', 'Lotus', 'Maserati', 'Mercedes-Benz', 'Nissan', 'Porsche', 'Toyota'];
             // Make cards
-            for(let car of cars) {
-                let card = await createCard(car);
-                document.getElementById("car-container").append(card);
-            }
+            for(let car of cars) document.getElementById("car-container").append(await createCard(car));
             // Append options
             for(let manufacturer of carManufacturers) {
                 let option = document.createElement("option");
@@ -57,39 +82,47 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
 });
 
-// Colors we use
-const colorPallete = {
-    "dark": {
-        "--primary": "rgb(20,18,24)",
-        "--primary-degraded": "rgba(20,18,24,0.15)",
-        "--background": "#fff"
-    },
-    "light": {
-        "--primary": "rgb(240,240,240)",
-        "--primary-degraded": "rgba(240,240,240,0.15)",
-        "--background": "#121212"
-    }
+// Switches betweeen english and arabic
+async function swapLanguage() {
+    lang = lang == "en" ? "ar" : "en";
+    await switchLanguage(lang);
+    localStorage.setItem("lang", lang);
 }
-
-// Configurations
-if(!localStorage.getItem("mode")) {
-    localStorage.setItem("mode", "light");
-}
-var mode = localStorage.getItem("mode");
 
 // Switches between darkmode and lightmode
 async function toggleDarkmode() {
-    for(let prop of ["--primary", "--primary-degraded", "--background"]) document.documentElement.style.setProperty(prop, colorPallete[mode][prop]);
-    document.getElementsByClassName("status")[0].children[0].setAttribute("d", mode == "light" ? "M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
-    : "M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z");
-    
     mode = mode == "light" ? "dark" : "light";
-    localStorage.setItem("mode", mode == "light" ? "dark" : "light");
+    await switchTheme(mode);
+    localStorage.setItem("mode", mode);
+}
+
+// Switches languages to the given one
+async function switchLanguage(lang) {
+    const languageData = await fetchLanguage();
+    let elements = [...document.querySelectorAll('[data-lang]')];
+    for(let element of elements) element.innerHTML = languageData[lang][element.dataset.lang].replace(/\n/g, '<br />');
+    
+    document.querySelector(".lang-switch").innerText = lang.toUpperCase();
+}
+
+// Switches themes to the given one
+async function switchTheme(theme) {
+    for(let prop of ["--primary", "--primary-degraded", "--background"]) document.documentElement.style.setProperty(prop, colorPallete[mode][prop]);
+    const iconPath = theme === "dark"
+        ? "M223.5 32C100 32 0 132.3 0 256S100 480 223.5 480c60.6 0 115.5-24.2 155.8-63.4c5-4.9 6.3-12.5 3.1-18.7s-10.1-9.7-17-8.5c-9.8 1.7-19.8 2.6-30.1 2.6c-96.9 0-175.5-78.8-175.5-176c0-65.8 36-123.1 89.3-153.3c6.1-3.5 9.2-10.5 7.7-17.3s-7.3-11.9-14.3-12.5c-6.3-.5-12.6-.8-19-.8z"
+        : "M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z";
+
+    document.querySelector(".status > *").setAttribute("d", iconPath);
 }
 
 // Gets the cars array from the collection.json file
 async function fetchCars() {
     const res = await fetch(`${window.location.pathname.includes("pages/") ? ".." : "."}/assets/js/collection.json`);
+    return await res.json();
+};
+
+async function fetchLanguage() {
+    const res = await fetch(`${window.location.pathname.includes("pages/") ? ".." : "."}/assets/js/language.json`);
     return await res.json();
 };
 
@@ -101,7 +134,7 @@ async function createCard(car) {
     let img = document.createElement("img");
     img.className = "car-image";
     img.alt = car.carmodel;
-    img.src = car.image_url || "../assets/images/placeholder.jpg"; // Add image source!
+    img.src = car.image_url || "../assets/images/placeholder.jpg";
 
     let details = document.createElement("div");
     details.className = "car-details";
@@ -112,7 +145,7 @@ async function createCard(car) {
       <p><strong>Price:</strong> $${car.MSRP.toLocaleString()}</p>
       <div class="card-buttons">
         <button class="book-btn">Book Now</button>
-        <button class="testdrive-btn">Preview</button>
+        <button class="preview-btn">Preview</button>
       </div>
     `;
 
