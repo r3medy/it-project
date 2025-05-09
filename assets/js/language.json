@@ -1,0 +1,32 @@
+{
+    "en": {
+        "home": "Home",
+        "cars": "Cars",
+        "feedback": "Feedback",
+        "aboutus": "About US",
+        "contactus": "Contact US",
+        "login": "Login",
+        "register": "Register",
+        "hero-header": "The <span class=\"ultimate\">ULTIMATE</span> driving experience",
+        "hero-text": "Discover the pinnacle of automotive engineering and luxury.\nOur exclusive collection of performance vehicles awaits\nyour command on the open road.",
+        "customers": "Customers",
+        "carssold": "Cars Sold",
+        "dealerships": "Dealerships",
+        "explore-btn": "Explore"
+    },
+    "ar": {
+        "home": "الرئيسية",
+        "cars": "السيارات",
+        "feedback": "الاراء",
+        "aboutus": "عننا",
+        "contactus": "تواصل معنا",
+        "login": "تسجيل دخول",
+        "register": "تسجيل جديد",
+        "hero-header": "تجربة القيادة <span class='ultimate'>القصوى</span>",
+        "hero-text": "اكتشف قمة الهندسة والسيارات الفاخرة.\nتنتظرك مجموعة حصرية من السيارات عالية الأداء\nلتنطلق بها على الطريق المفتوح.",
+        "customers": "العملاء",
+        "carssold": "السيارات المباعة",
+        "dealerships": "عدد الفروع",
+        "explore-btn": "اكتشف"
+    }
+}
