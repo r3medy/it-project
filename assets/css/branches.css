@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  margin: 80px 80px;
+  margin-bottom: 300px;
+}
+
+.iframe {
+  border-radius: 8px;
+  width: 700px;
+  height: 400px;
+  margin-left: -150px;
+}
+
+.contact-info {
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+.contact-info h1 {
+  position: absolute;
+  top: 150px;
+  right: 280px;
+}
+
+.gallery {
+  display: flex;
+  gap: 120px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-container {
+  perspective: 1000px;
+  width: 250px;
+  height: 250px;
+}
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.image-container:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.flip-front,
+.flip-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.flip-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flip-back {
+  transform: rotateY(180deg);
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.flipped-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(3px) brightness(0.7);
+  transform: scaleX(-1);
+}
+
+.img-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.social-media {
+  width: 70px;
+  display: flex;
+  align-items: center;
+  margin: 50px 50px;
+  margin-top: -250px;
+  list-style: none;
+}
+.social-media a {
+  text-decoration: none;
+  color: #000;
+}
