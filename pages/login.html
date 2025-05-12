@@ -1,40 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log In</title>
     <!-- CSS Stylesheets -->
-    <link rel="stylesheet" href="../assets/css/login.css">
-    <link rel="stylesheet" href="../universal.css">
+    <link rel="stylesheet" href="../assets/css/login.css" />
+    <link rel="stylesheet" href="../universal.css" />
     <!-- Javascript -->
     <script src="../assets/js/functions.js"></script>
   </head>
-<body>
+  <body>
+    <form>
+      <h1 data-lang="login-title">Log In</h1>
 
-  <form >
+      <label for="email" data-lang="email">Email</label>
 
-    <h1>Log In </h1>
+      <input type="email" id="email" placeholder="Enter your email" data-lang="email-placeholder" required />
 
-    <label for="email">email</label>
+      <br />
 
-    <input type="email"id="email" placeholder="Enter your email" required>
+      <label for="password" data-lang="password">Password</label>
 
-    <br>
+      <input
+        type="password"
+        id="password"
+        placeholder="Enter your password"
+        data-lang="password-placeholder"
+        required
+      />
 
-    <label for="password">password</label>
+      <br />
 
-    <input type="password" id="password" placeholder="Enter your password" required>
+      <button type="submit" data-lang="login-button">Log in</button>
 
-    <br>
-
-    <button type="submit">
-      log in
-    </button>
-
-    <p>Don't have an account? <a href="../pages/register.html">Create one</a></p>
-    
-  </form>
-
-</body>
+      <p data-lang="no-account">
+        Don't have an account? <a href="register.html">Create one</a>
+      </p>
+    </form>
+  </body>
 </html>
