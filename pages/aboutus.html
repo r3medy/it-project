@@ -12,122 +12,123 @@
 </head>
 <body>
     <nav class="navbar">
-        <ul class="nav-references">
-            <li><img src="../assets/images/icon.png" class="logo" /></li>
-            <li><a href="../main.html">Home</a></li>
-            <li><a href="../pages/coupe.html">Cars</a></li>
-            <li><a href="../pages/feedback.html">Feedback</a></li>
-            <li><a class="active-page" href="../pages/aboutus.html">About US</a></li>
-            <li><a href="../pages/contactus.html">Contact US</a></li>
-        </ul>
-        <ul class="nav-auth">
-            <li onclick="toggleDarkmode()"><svg class="status" viewBox="0 0 512 512">
-                <path d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"/>
-            </svg></li>
-            <li><a class="login-btn" href="../pages/login.html">Login</a></li>
-            <li><a class="register-btn" href="../pages/register.html">Register</a></li>
-        </ul>
+      <ul class="nav-references">
+        <li><img src="../assets/images/icon.png" class="logo" /></li>
+        <li><a href="../main.html" data-lang="home">Home</a></li>
+        <li><a href="../pages/cars.html" data-lang="cars">Cars</a></li>
+        <li><a href="../pages/feedback.html" data-lang="feedback">Feedback</a></li>
+        <li><a href="../pages/aboutus.html" class="active-page" data-lang="aboutus">About US</a></li>
+        <li><a href="../pages/branches.html" data-lang="branches">Branches</a></li>
+      </ul>
+      <ul class="nav-auth">
+        <li onclick="toggleDarkmode()">
+          <svg class="status" viewBox="0 0 512 512">
+            <path
+              d="M361.5 1.2c5 2.1 8.6 6.6 9.6 11.9L391 121l107.9 19.8c5.3 1 9.8 4.6 11.9 9.6s1.5 10.7-1.6 15.2L446.9 256l62.3 90.3c3.1 4.5 3.7 10.2 1.6 15.2s-6.6 8.6-11.9 9.6L391 391 371.1 498.9c-1 5.3-4.6 9.8-9.6 11.9s-10.7 1.5-15.2-1.6L256 446.9l-90.3 62.3c-4.5 3.1-10.2 3.7-15.2 1.6s-8.6-6.6-9.6-11.9L121 391 13.1 371.1c-5.3-1-9.8-4.6-11.9-9.6s-1.5-10.7 1.6-15.2L65.1 256 2.8 165.7c-3.1-4.5-3.7-10.2-1.6-15.2s6.6-8.6 11.9-9.6L121 121 140.9 13.1c1-5.3 4.6-9.8 9.6-11.9s10.7-1.5 15.2 1.6L256 65.1 346.3 2.8c4.5-3.1 10.2-3.7 15.2-1.6zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0zm224 0a128 128 0 1 0 -256 0 128 128 0 1 0 256 0z"
+            />
+          </svg>
+        </li>
+        <li><a class="lang-switch" href="#" onclick="swapLanguage()">EN</a></li>
+        <li><a class="login-btn" href="../pages/login.html" data-lang="login">Login</a></li>
+        <li>
+          <a class="register-btn" href="../pages/register.html" data-lang="register">Register</a>
+        </li>
+      </ul>
     </nav>
     <header>
-        <h1>About Us</h1>
-        <p>A Community for Car Enthusiasts</p>
+        <h1 data-lang="header">About Us</h1>
+        <p data-lang="subtitle">For car enthusiasts by car enthusiasts</p>
     </header>
 
     <main>
         
         <section>
-            <h2>Our Story</h2>
-            <p>
-                Welcome to Car Enthusiasts, your ultimate online destination for everything about cars.
-                Founded in 2010 by a group of passionate automotive aficionados, our mission is to create a
-                vibrant community where car lovers from around the world can connect, share their knowledge,
-                and fuel their passion. What started as a small forum has now grown into a comprehensive resource
-                featuring in-depth reviews, the latest industry news, and a thriving marketplace.
-            </p>
-            <p>
-                We believe that cars are more than just a mode of transportation; they are a symbol of innovation,
-                freedom, and personal expression. Whether you're a seasoned collector, a weekend mechanic, or simply
-                someone who appreciates the beauty and engineering of automobiles, you'll find a home here.
+            <h2 data-lang="our-story">Our Story</h2>
+            <p data-lang="story">
+                Welcome to your go-to destination for everything automotive. Founded in 2010 by car enthusiasts, we connect lovers of all things cars, offering expert reviews, news, and a lively marketplace. Cars are more than vehicles—they’re a symbol of innovation and personal expression. Whether you're a collector or a casual fan, you'll find your community here.
             </p>
         </section>
 
         <section>
-            <h2>Our Mission</h2>
-            <p>
-                Our mission is to be the most trusted and comprehensive online resource for car enthusiasts. We strive to:
+            <h2 data-lang="our-mission">Our Mission</h2>
+            <p data-lang="our-mission-subtitle">
+                We’re committed to providing an exceptional car buying experience with a focus on quality and customer satisfaction.
             </p>
             <ul>
-                <li>Provide high-quality, unbiased information and reviews.</li>
-                <li>Foster a passionate and inclusive community.</li>
-                <li>Connect buyers and sellers in a safe and transparent marketplace.</li>
-                <li>Celebrate the past, present, and future of automotive culture.</li>
+                <li data-lang="our-mission-item1">Quality Vehicles: Offer a wide range of reliable new cars.</li>
+                <li data-lang="our-mission-item2">Outstanding Service: Deliver a seamless experience from purchase to after-sales support.</li>
             </ul>
         </section>
 
         <section>
-            <h2>Our Partners</h2>
-            <div class="grid-container">
-                <div class="partner-card">
-                    <img src="mercedes logo.jpeg" alt="Photo for mercedes logo">
-                    <h3>Mercedes</h3>
-                </div>
-                <div class="partner-card">
-                    <img src="mclaren logo.png" alt="Photo for mclaren logo">
-                    <h3>Mclaren</h3>
-                </div>
-                <div class="partner-card">
-                    <img src="bmw.png" alt="Photo for bmw logo">
-                    <h3>BMW</h3>
-                </div>
-                <div class="partner-card">
-                    <img src="nissan logo.png" alt="Photo for nissan logo">
-                    <h3>Nissan</h3>
-                </div>
-                <div class="partner-card">
-                    <img src="audi logo.png" alt="Photo for audi logo">
-                    <h3>Audi</h3>
-                </div>
-                <div class="partner-card">
-                    <img src="ford logo.jpeg" alt="Photo for ford logo">
-                    <h3>Ford</h3>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <h2>Meet the Team</h2>
+            <h2 data-lang="meet-the-team">Meet the Team</h2>
             <div class="grid-container">
                 <div class="team-member">
-                    <img src="CEO.jpeg" alt=" Our Team Member 1">
-                    <h3>John Smith</h3>
-                    <p>Founder & CEO</p>
-                    <p>John's passion for cars started with his first project car at age 16. He turned his hobby into a career.</p>
+                    <h3>Yousef Adel</h3>
                 </div>
                 <div class="team-member">
-                    <img src="female editor.jpeg" alt=" Our Team Member 2">
-                    <h3>Emily Brown</h3>
-                    <p>Editor-in-Chief</p>
-                    <p>Emily has been writing about cars for over a decade. She ensures our content is accurate and engaging.</p>
+                    <h3>Mohamed Shaaban</h3>
                 </div>
                 <div class="team-member">
-                    <img src="male manager2.jpeg" alt=" Our Team Member 3">
-                    <h3>David Wilson</h3>
-                    <p>Marketplace Manager</p>
-                    <p>David oversees our online marketplace, ensuring a smooth and safe experience for buyers and sellers.</p>
+                    <h3>Mohanad Tamer</h3>
                 </div>
                 <div class="team-member">
-                    <img src="female manager2.jpeg" alt=" Our Team Member 3">
-                    <h3>Lara John</h3>
-                    <p>Marketplace Manager</p>
-                    <p>Lara oversees our online marketplace, ensuring a smooth and safe experience for buyers and sellers.</p>
+                    <h3>Yousef Waleed</h3>
                 </div>
-                
+                <div class="team-member">
+                    <h3>Mazen Hesham</h3>
+                </div>
+                <div class="team-member">
+                    <h3>Mohamed Waleed</h3>
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>© 2025 Car Enthusiasts. All rights reserved.</p>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section about">
+          <h3>CarDealer</h3>
+          <p>
+            Your trusted partner for luxury vehicles since 2010. We offer
+            premium cars with warranty and excellent service.
+          </p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="../main.html">Home</a></li>
+            <li><a href="../pages/aboutus.html">About Us</a></li>
+            <li><a href="../pages/coupe.html">Cars</a></li>
+            <li><a href="../pages/feedback.html">Feedback</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section contact">
+          <h3>Contact Us</h3>
+          <div class="contact-info">
+            <p>
+              <i class="fas fa-map-marker-alt"></i> 123 Auto Street, Car City
+            </p>
+            <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+            <p><i class="fas fa-envelope"></i> info@cardealer.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          &copy; 2025 CarDealer. All Rights Reserved |
+          <a href="#">Privacy Policy</a> | <a href="#">Terms & Conditions</a>
+        </p>
+      </div>
     </footer>
 </body>
 </html>
