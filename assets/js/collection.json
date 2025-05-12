@@ -14,12 +14,14 @@
       "torque": 750,
       "city_fueleco": 15.7,
       "highway_fueleco": 10.7,
+      "weight": 2010,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/BMW/2020-BMW-M8-Competition-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2020-BMW-M8-Competition-002-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2020-BMW-M8-Competition-003-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2020-BMW-M8-Competition-004-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2020-BMW-M8-Competition-005-1080.jpg"],
       "MSRP": 138800
     },
     {
       "manufacturer": "BMW",
       "type": "coupe",
-      "model": "M4 CS",
+      "model": "M4 CS (G82)",
       "year": 2025,
       "engine_size": 3.0,
       "engine_description": "Twin-Turbo Inline-6 (S58)",
@@ -30,6 +32,8 @@
       "torque": 650,
       "city_fueleco": 10.1,
       "highway_fueleco": 9.8,
+      "weight": 1780,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/BMW/2025-BMW-M4-CS-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2025-BMW-M4-CS-010-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2025-BMW-M4-CS-009-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2025-BMW-M4-CS-004-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2025-BMW-M4-CS-006-1080.jpg"],
       "MSRP": 124675
     },
     {
@@ -46,6 +50,8 @@
       "torque": 750,
       "city_fueleco": 15.7,
       "highway_fueleco": 11.2,
+      "weight": 1825,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/BMW/2022-BMW-M5-CS-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2022-BMW-M5-CS-003-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2022-BMW-M5-CS-006-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2022-BMW-M5-CS-004-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2022-BMW-M5-CS-007-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2022-BMW-M5-CS-009-1080.jpg"],
       "MSRP": 142000
     },
     {
@@ -62,23 +68,27 @@
       "torque": 660,
       "city_fueleco": 14.7,
       "highway_fueleco": 10.0,
+      "weight": 1700,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-M2-M-Performance-Parts-005-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-M2-M-Performance-Parts-006-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-M2-M-Performance-Parts-004-1080.jpg"],
       "MSRP": 66075
     },
     {
       "manufacturer": "BMW",
       "type": "sedan",
-      "model": "M340i",
-      "year": 2025,
+      "model": "M3 (F80)",
+      "year": 2015,
       "engine_size": 3.0,
-      "engine_description": "Twin-Turbo Inline-6",
-      "transmission": "8-Speed Automatic",
+      "engine_description": "Twin Turbo Inline-6",
+      "transmission": "7-Speed DCT",
       "drivetrain": "RWD",
-      "0-100kmh": 4.4,
-      "horsepower": 382,
-      "torque": 500,
-      "city_fueleco": 10.2,
-      "highway_fueleco": 7.8,
-      "MSRP": 56000
+      "0-100kmh": 3.8,
+      "horsepower": 425,
+      "torque": 550,
+      "city_fueleco": 22.2,
+      "highway_fueleco": 7.3,
+      "weight": 1657,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/BMW/2015-BMW-M3-Sedan-009-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2015-BMW-M3-Sedan-007-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2015-BMW-M3-Sedan-008-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2015-BMW-M3-Sedan-012-1080.jpg"],
+      "MSRP": 62995
     },
     {
       "manufacturer": "BMW",
@@ -94,6 +104,8 @@
       "torque": 750,
       "city_fueleco": 13.8,
       "highway_fueleco": 10.7,
+      "weight": 2370,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/BMW/2024-BMW-X5-M-Competition-008-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2024-BMW-X5-M-Competition-006-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2024-BMW-X5-M-Competition-003-1080.jpg"],
       "MSRP": 122300
     },
     {
@@ -110,23 +122,27 @@
       "torque": 750,
       "city_fueleco": 13.8,
       "highway_fueleco": 10.7,
+      "weight": 2400,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/BMW/2024-BMW-X6-M-Competition-005-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2024-BMW-X6-M-Competition-004-1080.jpg"],
       "MSRP": 127000
     },
     {
       "manufacturer": "BMW",
       "type": "suv",
-      "model": "XM",
+      "model": "XM Red Label",
       "year": 2025,
       "engine_size": 4.4,
       "engine_description": "Twin-Turbo V8 Plug-in Hybrid",
       "transmission": "8-Speed Automatic",
       "drivetrain": "AWD (xDrive)",
-      "0-100kmh": 4.1,
-      "horsepower": 644,
-      "torque": 800,
-      "city_fueleco": 12.4,
-      "highway_fueleco": 9.8,
-      "MSRP": 159000
+      "0-100kmh": 3.4,
+      "horsepower": 738,
+      "torque": 1000,
+      "city_fueleco": 19.6,
+      "highway_fueleco": 13.8,
+      "weight": 2760,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/BMW/2024-BMW-XM-Label-Red-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2024-BMW-XM-Label-Red-004-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2024-BMW-XM-Label-Red-002-1080.jpg"],
+      "MSRP": 161675
     },
     {
       "manufacturer": "BMW",
@@ -142,13 +158,15 @@
       "torque": 500,
       "city_fueleco": 10.4,
       "highway_fueleco": 8.0,
+      "weight": 1600,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-Z4-M40i-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-Z4-M40i-008-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-Z4-M40i-007-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/BMW/2023-BMW-Z4-M40i-005-1080.jpg"],
       "MSRP": 66450
     },
     {
       "manufacturer": "Nissan",
       "type": "coupe",
       "model": "GT-R Nismo",
-      "year": 2025,
+      "year": 2020,
       "engine_size": 3.8,
       "engine_description": "Twin-Turbocharged V6 (VR38DETT)",
       "transmission": "6-Speed Dual-Clutch Automatic",
@@ -158,6 +176,8 @@
       "torque": 652,
       "city_fueleco": 14.7,
       "highway_fueleco": 10.7,
+      "weight": 1750,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Nissan/2020-Nissan-GT-R-Nismo-007-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Nissan/2020-Nissan-GT-R-Nismo-009-1080.jpg"],
       "MSRP": 220000
     },
     {
@@ -174,13 +194,15 @@
       "torque": 475,
       "city_fueleco": 11.8,
       "highway_fueleco": 9.4,
+      "weight": 1600,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Nissan/2024-Nissan-Z-Nismo-007-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Nissan/2024-Nissan-Z-Nismo-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Nissan/2024-Nissan-Z-Nismo-003-1080.jpg"],
       "MSRP": 42970
     },
     {
       "manufacturer": "Alfa Romeo",
       "type": "sedan",
       "model": "Giulia Quadrifoglio",
-      "year": 2025,
+      "year": 2020,
       "engine_size": 2.9,
       "engine_description": "Twin-Turbocharged V6",
       "transmission": "8-Speed Automatic",
@@ -190,13 +212,15 @@
       "torque": 600,
       "city_fueleco": 12.4,
       "highway_fueleco": 8.0,
+      "weight": 1650,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Alfa-Romeo/2020-Alfa-Romeo-Giulia-Quadrifoglio-007-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Alfa-Romeo/2020-Alfa-Romeo-Giulia-Quadrifoglio-008-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Alfa-Romeo/2020-Alfa-Romeo-Giulia-Quadrifoglio-009-1080.jpg"],
       "MSRP": 81995
     },
     {
       "manufacturer": "Audi",
       "type": "wagon",
-      "model": "RS 6 Avant",
-      "year": 2025,
+      "model": "RS6 Avant",
+      "year": 2020,
       "engine_size": 4.0,
       "engine_description": "Twin-Turbocharged V8",
       "transmission": "8-Speed Automatic",
@@ -206,6 +230,8 @@
       "torque": 850,
       "city_fueleco": 14.3,
       "highway_fueleco": 9.2,
+      "weight": 2150,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Audi/2020-Audi-RS6-Avant-007-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Audi/2020-Audi-RS6-Avant-008-1080.jpg"],
       "MSRP": 123995
     },
     {
@@ -222,6 +248,8 @@
       "torque": 800,
       "city_fueleco": 16.0,
       "highway_fueleco": 10.7,
+      "weight": 2400,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Audi/2025-Audi-RS-Q8-Performance-008-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Audi/2025-Audi-RS-Q8-Performance-007-1080.jpg"],
       "MSRP": 127995
     },
     {
@@ -238,6 +266,8 @@
       "torque": 830,
       "city_fueleco": 2.9,
       "highway_fueleco": 2.4,
+      "weight": 2350,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Audi/2022-Audi-RS-E-Tron-GT-005-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Audi/2022-Audi-RS-E-Tron-GT-006-1080.jpg"],
       "MSRP": 147395
     },
     {
@@ -254,13 +284,15 @@
       "torque": 850,
       "city_fueleco": 14.2,
       "highway_fueleco": 9.0,
+      "weight": 2140,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Audi/2023-Audi-RS7-Sportback-Performance-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Audi/2023-Audi-RS7-Sportback-Performance-002-1080.jpg"],
       "MSRP": 125995
     },
     {
       "manufacturer": "Audi",
       "type": "sportback",
       "model": "RS5 Sportback",
-      "year": 2025,
+      "year": 2019,
       "engine_size": 2.9,
       "engine_description": "Twin-Turbocharged V6",
       "transmission": "8-Speed Automatic",
@@ -270,6 +302,8 @@
       "torque": 600,
       "city_fueleco": 11.7,
       "highway_fueleco": 8.0,
+      "weight": 1840,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Audi/2019-Audi-RS5-Sportback-003-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Audi/2019-Audi-RS5-Sportback-006-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Audi/2019-Audi-RS5-Sportback-004-1080.jpg"],
       "MSRP": 78295
     },
     {
@@ -286,6 +320,8 @@
       "torque": 1400,
       "city_fueleco": 11.8,
       "highway_fueleco": 8.2,
+      "weight": 2380,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2025-Mercedes-AMG-GT63-S-E-Performance-4-Door-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2025-Mercedes-AMG-GT63-S-E-Performance-4-Door-002-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2025-Mercedes-AMG-GT63-S-E-Performance-4-Door-004-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2025-Mercedes-AMG-GT63-S-E-Performance-4-Door-005-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2025-Mercedes-AMG-GT63-S-E-Performance-4-Door-006-1080.jpg"],
       "MSRP": 199950
     },
     {
@@ -302,6 +338,8 @@
       "torque": 800,
       "city_fueleco": 14.5,
       "highway_fueleco": 9.8,
+      "weight": 1950,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2022-Mercedes-AMG-SL63-008-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2022-Mercedes-AMG-SL63-007-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2022-Mercedes-AMG-SL63-006-1080.jpg"],
       "MSRP": 184900
     },
     {
@@ -318,6 +356,8 @@
       "torque": 1020,
       "city_fueleco": 8.7,
       "highway_fueleco": 6.9,
+      "weight": 2100,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2023-Mercedes-AMG-C63-S-E-Performance-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2023-Mercedes-AMG-C63-S-E-Performance-002-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2023-Mercedes-AMG-C63-S-E-Performance-003-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2023-Mercedes-AMG-C63-S-E-Performance-004-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Mercedes-Benz/2023-Mercedes-AMG-C63-S-E-Performance-005-1080.jpg"],
       "MSRP": 108675
     },
     {
@@ -334,6 +374,8 @@
       "torque": 567,
       "city_fueleco": 13.8,
       "highway_fueleco": 9.0,
+      "weight": 1800,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Ford/2024-Ford-Mustang-Dark-Horse-007-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Ford/2024-Ford-Mustang-Dark-Horse-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Ford/2024-Ford-Mustang-Dark-Horse-006-1080.jpg"],
       "MSRP": 60865
     },
     {
@@ -350,6 +392,8 @@
       "torque": 250,
       "city_fueleco": 9.5,
       "highway_fueleco": 7.2,
+      "weight": 1280,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Toyota/2022-Toyota-GR-86-011-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Toyota/2022-Toyota-GR-86-012-1080.jpg"],
       "MSRP": 31595
     },
     {
@@ -366,6 +410,8 @@
       "torque": 500,
       "city_fueleco": 10.6,
       "highway_fueleco": 7.5,
+      "weight": 1570,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Toyota/2025-Toyota-GR-Supra-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Toyota/2025-Toyota-GR-Supra-002-1080.jpg"],
       "MSRP": 56945
     },
     {
@@ -382,23 +428,27 @@
       "torque": 1050,
       "city_fueleco": 17.8,
       "highway_fueleco": 11.2,
+      "weight": 1680,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Chevrolet/2025-Chevrolet-Corvette-ZR1-002-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Chevrolet/2025-Chevrolet-Corvette-ZR1-003-1080.jpg"],
       "MSRP": 179995
     },
-    {
+    { 
       "manufacturer": "Chevrolet",
-      "type": "coupe",
-      "model": "Camaro 2SS",
-      "year": 2024,
+      "type": "coupe", 
+      "model": "Camaro ZL1 1LE",
+      "year": 2018,
       "engine_size": 6.2,
-      "engine_description": "Naturally Aspirated V8",
+      "engine_description": "LT4 Supercharged V8",
       "transmission": "6-Speed Manual",
       "drivetrain": "RWD",
-      "0-100kmh": 4.3,
-      "horsepower": 455,
-      "torque": 617,
-      "city_fueleco": 14.6,
-      "highway_fueleco": 9.5,
-      "MSRP": 47995
+      "0-100kmh": 3.7,
+      "horsepower": 650,
+      "torque": 881,
+      "city_fueleco": 14.1,
+      "highway_fueleco": 9.9,
+      "weight": 1760,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Chevrolet/2018-Chevrolet-Camaro-ZL1-1LE-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Chevrolet/2018-Chevrolet-Camaro-ZL1-1LE-004-1080.jpg"],
+      "MSRP": 69995
     },
     {
       "manufacturer": "Porsche",
@@ -414,13 +464,15 @@
       "torque": 570,
       "city_fueleco": 12.8,
       "highway_fueleco": 8.5,
+      "weight": 1570,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Porsche/2025-Porsche-911-Carrera-GTS-005-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Porsche/2025-Porsche-911-Carrera-GTS-002-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Porsche/2025-Porsche-911-Carrera-GTS-004-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Porsche/2025-Porsche-911-Carrera-GTS-003-1080.jpg"],
       "MSRP": 151995
     },
     {
       "manufacturer": "Porsche",
       "type": "suv",
       "model": "Cayenne GTS",
-      "year": 2025,
+      "year": 2020,
       "engine_size": 4.0,
       "engine_description": "Twin-Turbocharged V8",
       "transmission": "8-Speed Automatic",
@@ -430,13 +482,15 @@
       "torque": 650,
       "city_fueleco": 14.9,
       "highway_fueleco": 10.2,
+      "weight": 2220,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Porsche/2020-Porsche-Cayenne-GTS-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Porsche/2020-Porsche-Cayenne-GTS-002-1080.jpg"],
       "MSRP": 117600
     },
     {
       "manufacturer": "Lexus",
       "type": "coupe",
       "model": "RC F",
-      "year": 2025,
+      "year": 2020,
       "engine_size": 5.0,
       "engine_description": "Naturally Aspirated V8",
       "transmission": "8-Speed Automatic",
@@ -446,12 +500,14 @@
       "torque": 535,
       "city_fueleco": 14.4,
       "highway_fueleco": 9.6,
+      "weight": 1800,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Lexus/2020-Lexus-RC-F-003-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Lexus/2020-Lexus-RC-F-002-1080.jpg"],
       "MSRP": 68650
     },
     {
       "manufacturer": "Lexus",
       "type": "sedan",
-      "model": "IS 500",
+      "model": "IS 500 F Sport Performance",
       "year": 2025,
       "engine_size": 5.0,
       "engine_description": "Naturally Aspirated V8",
@@ -462,13 +518,15 @@
       "torque": 535,
       "city_fueleco": 13.9,
       "highway_fueleco": 9.2,
+      "weight": 1765,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Lexus/2022-Lexus-IS-500-F-Sport-Performance-003-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Lexus/2022-Lexus-IS-500-F-Sport-Performance-002-1080.jpg"],
       "MSRP": 62075
     },
     {
       "manufacturer": "Lotus",
       "type": "coupe",
       "model": "Emira",
-      "year": 2025,
+      "year": 2023,
       "engine_size": 3.5,
       "engine_description": "Supercharged V6",
       "transmission": "6-Speed Manual",
@@ -478,6 +536,8 @@
       "torque": 430,
       "city_fueleco": 12.7,
       "highway_fueleco": 8.9,
+      "weight": 1450,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Lotus/2023-Lotus-Emira-002-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Lotus/2023-Lotus-Emira-003-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Lotus/2023-Lotus-Emira-007-1080.jpg"],
       "MSRP": 93995
     },
     {
@@ -494,12 +554,14 @@
       "torque": 800,
       "city_fueleco": 15.7,
       "highway_fueleco": 10.2,
+      "weight": 1670,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Aston-Martin/2025-Aston-Martin-Vantage-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Aston-Martin/2025-Aston-Martin-Vantage-008-1080.jpg"],
       "MSRP": 177995
     },
     {
       "manufacturer": "Dodge",
       "type": "coupe",
-      "model": "Challenger Hellcat",
+      "model": "Challenger Hellcat Widebody",
       "year": 2023,
       "engine_size": 6.2,
       "engine_description": "Supercharged HEMI V8",
@@ -510,23 +572,29 @@
       "torque": 881,
       "city_fueleco": 17.2,
       "highway_fueleco": 10.7,
+      "weight": 2025,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Dodge/2019-Dodge-Challenger-SRT-Hellcat-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Dodge/2019-Dodge-Challenger-SRT-Hellcat-002-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Dodge/2019-Dodge-Challenger-SRT-Hellcat-010-1080.jpg"],
       "MSRP": 67995
-    },{
-        "manufacturer": "Dodge",
-        "type": "coupe",
-        "model": "Viper",
-        "year": 2017,
-        "engine_size": 8.4,
-        "engine_description": "Naturally Aspirated V10",
-        "transmission": "6-speed manual",
-        "drivetrain": "RWD",
-        "0-100kmh": 3.5,
-        "horsepower": 645,
-        "torque": 813,
-        "city_fueleco": 19.6,
-        "highway_fueleco": 11.8,
-        "MSRP": 87895
-    },{
+    },
+    {
+      "manufacturer": "Dodge",
+      "type": "coupe",
+      "model": "Viper ACR",
+      "year": 2017,
+      "engine_size": 8.4,
+      "engine_description": "Naturally Aspirated V10",
+      "transmission": "6-Speed Manual",
+      "drivetrain": "RWD",
+      "0-100kmh": 3.5,
+      "horsepower": 645,
+      "torque": 813,
+      "city_fueleco": 19.6,
+      "highway_fueleco": 11.8,
+      "weight": 1540,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Dodge/2016-Dodge-Viper-ACR-001-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Dodge/2016-Dodge-Viper-ACR-003-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Dodge/2016-Dodge-Viper-ACR-005-1080.jpg"],
+      "MSRP": 87895
+    },
+    {
       "manufacturer": "Acura",
       "type": "coupe",
       "model": "NSX Type S",
@@ -540,29 +608,15 @@
       "torque": 667,
       "city_fueleco": 11.7,
       "highway_fueleco": 10.9,
+      "weight": 1780,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Acura/2022-Acura-NSX-Type-S-006-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Acura/2022-Acura-NSX-Type-S-003-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Acura/2022-Acura-NSX-Type-S-002-1080.jpg"],
       "MSRP": 169500
-    },
-    {
-      "manufacturer": "Jaguar",
-      "type": "coupe",
-      "model": "F-Type",
-      "year": 2024,
-      "engine_size": 5.0,
-      "engine_description": "Supercharged V8",
-      "transmission": "8-speed automatic",
-      "drivetrain": "RWD",
-      "0-100kmh": 3.7,
-      "horsepower": 575,
-      "torque": 700,
-      "city_fueleco": 15.2,
-      "highway_fueleco": 10.4,
-      "MSRP": 107200
     },
     {
       "manufacturer": "Maserati",
       "type": "coupe",
       "model": "GranTurismo",
-      "year": 2025,
+      "year": 2023,
       "engine_size": 3.0,
       "engine_description": "Twin-Turbocharged V6",
       "transmission": "8-speed automatic",
@@ -572,6 +626,8 @@
       "torque": 650,
       "city_fueleco": 14.8,
       "highway_fueleco": 9.7,
+      "weight": 2260,
+      "display_images": ["https://www.wsupercars.com/wallpapers-regular/Maserati/2023-Maserati-GranTurismo-011-1080.jpg", "https://www.wsupercars.com/wallpapers-regular/Maserati/2023-Maserati-GranTurismo-011-1080.jpg"],
       "MSRP": 174995
     }
   ]
