@@ -1,81 +1,77 @@
 body {
+  background-image: url("images/002a38f12999f35cd245933298f01ad7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    background-image: url("images/002a38f12999f35cd245933298f01ad7.jpg"); 
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  
-    background-color: var(--background);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  
-  }
-  
-  
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  margin: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 8px;
+  display: block;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+@media screen and (max-width: 600px) {
   form {
-    
-      background-color: rgba(255, 255, 255, 0.2); 
-      backdrop-filter: blur(10px); 
-      -webkit-backdrop-filter: blur(10px); 
-      padding: 20px;
-      border-radius: 8px;
-      width: 300px;
-      margin: auto;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      border: 1px solid rgba(255, 255, 255, 0.3); 
-    }
-    
-  
-  h1 {
-    text-align: center;
-    font-size: 24px;
-    margin-bottom: 20px;
+    width: 90%;
+    padding: 15px;
   }
-  
-  label {
-    font-size: 14px;
-    margin-bottom: 8px;
-    display: block;
-  }
-  
-  input {
-    margin-bottom: 15px;
-    padding: 10px;
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-  }
-  
+
+  input,
   button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007BFF;
-    border: none;
-    color: white;
-    font-size: 16px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 14px;
   }
-  
-  button:hover {
-    background-color: #0056b3;
+
+  h1 {
+    font-size: 20px;
   }
-  @media screen and (max-width: 600px) {
-    form {
-      width: 90%; 
-      padding: 15px;
-    }
-  
-    input, button {
-      font-size: 14px; 
-    }
-  
-    h1 {
-      font-size: 20px;
-    }
-  }
+}
