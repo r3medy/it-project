@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BMW Configurator</title>
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="../universal.css" />
+    <link rel="stylesheet" href="../assets/css/customization.css" />
+    <!-- Javascript -->
+    <script src="../assets/js/functions.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="header">M3 (F80)</h1>
+      <div class="subtitle" id="subtitle"></div>
+      <div class="info-line">
+        <span id="info-line-color">Not Chosen</span> <br />
+        <span id="info-line-rims">Not Chosen</span>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title">Car color</h3>
+        <div class="color-options" id="colorOptions">
+          <div class="color-circle white" data-color="White"></div>
+          <div class="color-circle black" data-color="Black"></div>
+          <div class="color-circle orange" data-color="Orange"></div>
+          <div class="color-circle gray" data-color="Gray"></div>
+          <div class="color-circle blue" data-color="Blue"></div>
+        </div>
+      </div>
+
+      <div class="section">
+        <h3 class="section-title">Rim size</h3>
+        <div class="rim-options" id="rimOptions">
+          <button class="rim-button" data-rim="17” Standard Alloy">
+            17” Standard Alloy
+          </button>
+          <button class="rim-button" data-rim="18” Sport Alloy">
+            18” Sport Alloy
+          </button>
+          <button class="rim-button" data-rim="19” Premium Alloy">
+            19” Premium Alloy
+          </button>
+          <button class="rim-button" data-rim="20” Performance Alloy">
+            20” Performance Alloy
+          </button>
+        </div>
+      </div>
+
+      <button class="pay-button" onclick="customizationSubmit()">
+        Continue to payment
+      </button>
+    </div>
+  </body>
+</html>
