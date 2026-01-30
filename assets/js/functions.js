@@ -228,6 +228,7 @@ async function createCard(car) {
     let img = document.createElement("img");
     img.className = "car-image";
     img.src = "../assets/images/cars/" + car.model.toLowerCase() + ".jpg";
+    img.loading = "lazy";
 
     let details = document.createElement("div");
     details.className = "car-details";
